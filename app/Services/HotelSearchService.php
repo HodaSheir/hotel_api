@@ -26,7 +26,7 @@ class HotelSearchService
       foreach ($this->suppliers as $key => $supplier) {
         $requests[$key] = $supplier->createPoolRequest($pool, $params, $key);
       }
-      return $requests; // return array of scheduled requests
+      return $requests;
     });
 
     // 2) Normalize & merge responses
